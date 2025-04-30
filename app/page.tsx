@@ -6,6 +6,7 @@ import SkillBadge from "@/components/skill-badge"
 import ExperienceCard from "@/components/experience-card"
 import EducationCard from "@/components/education-card"
 import ContactForm from "@/components/contact-form"
+import { HeroSection } from "@/components/hero-section"
 
 export default function Home() {
   return (
@@ -60,32 +61,7 @@ export default function Home() {
       </header>
 
       <main className="container py-10">
-        {/* Hero Section */}
-        <section className="py-20 md:py-32 flex flex-col items-center justify-center text-center">
-          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-6 border-4 border-primary">
-            <img
-              src="/placeholder.svg?height=128&width=128"
-              alt="Waqar Safdar"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-4">Waqar Safdar</h1>
-          <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">Frontend Developer</h2>
-          <p className="max-w-[42rem] text-muted-foreground mb-8">
-            Crafting beautiful, responsive, and user-friendly web experiences with modern technologies.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button asChild>
-              <a href="#contact">Get in Touch</a>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="/resume.pdf" download>
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </a>
-            </Button>
-          </div>
-        </section>
+        <HeroSection />
 
         {/* About Section */}
         <section id="about" className="py-16 scroll-mt-20">
